@@ -31,7 +31,8 @@ public class Banking implements Strategy {
 					return Game.getOpenInterfaceId() != -1;
 				}
 
-			}, 1250);
+			}, 250);
+		} else {
 			if (Game.getOpenInterfaceId() != -1) {
 				Menu.sendAction(53, 1436, 0, 5382);
 				Time.sleep(new SleepCondition() {
@@ -40,7 +41,7 @@ public class Banking implements Strategy {
 						return Inventory.getCount(1437) >= 1;
 					}
 
-				}, 1250);
+				}, 250);
 			}
 		}
 
