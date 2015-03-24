@@ -28,7 +28,7 @@ public class RuneCraft implements Strategy {
 					return Inventory.getCount(1437) == 0;
 				}
 
-			}, 500);
+			}, 250);
 			Main.runeCount += 27;
 		}
 
